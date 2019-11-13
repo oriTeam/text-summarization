@@ -62,72 +62,6 @@
 [![Product Name Screen Shot][product-history]](https://github.com/vantrong291/wetravel)
 
 
-### Built With
-* [React Native](https://facebook.github.io/react-native/)
-* [React](https://reactjs.org/)
-
-
-
-<!-- GETTING STARTED -->
-## Getting Started
-
-This is an instructions on setting up our project locally.
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-Some prerequisites that you need to run locally.
-* npm
-```sh
-npm install npm@latest -g
-```
-* react-native
-```sh
-npm install -g react-native-cli
-```
-* Android SDK
-```1. Install Android Studio
-Download and install Android Studio. Choose a "Custom" setup when prompted to select an installation type. Make sure the boxes next to all of the following are checked:
-
-* Android SDK
-* Android SDK Platform
-* Android Virtual Device
-
-Then, click "Next" to install all of these components.
-
-If the checkboxes are grayed out, you will have a chance to install these components later on.
-
-Once setup has finalized and you're presented with the Welcome screen, proceed to the next step.
-
-2. Install the Android SDK
-Android Studio installs the latest Android SDK by default. Building a React Native app with native code, however, requires the Android 9 (Pie) SDK in particular. Additional Android SDKs can be installed through the SDK Manager in Android Studio.
-
-The SDK Manager can be accessed from the "Welcome to Android Studio" screen. Click on "Configure", then select "SDK Manager".
-
-The SDK Manager can also be found within the Android Studio "Preferences" dialog, under Appearance & Behavior → System Settings → Android SDK.
-
-Select the "SDK Platforms" tab from within the SDK Manager, then check the box next to "Show Package Details" in the bottom right corner. Look for and expand the Android 9 (Pie) entry, then make sure the following items are checked:
-
-Android SDK Platform 28
-Intel x86 Atom_64 System Image or Google APIs Intel x86 Atom System Image
-Next, select the "SDK Tools" tab and check the box next to "Show Package Details" here as well. Look for and expand the "Android SDK Build-Tools" entry, then make sure that 28.0.3 is selected.
-
-Finally, click "Apply" to download and install the Android SDK and related build tools.
-
-3. Configure the ANDROID_HOME environment variable
-The React Native tools require some environment variables to be set up in order to build apps with native code.
-
-Add the following lines to your $HOME/.bash_profile or $HOME/.bashrc config file:
-
-export ANDROID_HOME=$HOME/Android/Sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-```
-
-
-
 ### Installation
 
 1. Clone the repo
@@ -201,5 +135,5 @@ Project Link: [https://github.com/vantrong291/wetravel](https://github.com/vantr
 [license-url]: https://github.com/vantrong291/text-summarization/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/vantrong291
-[product-summary]: screenshoots/summary.png
-[product-history]: screenshoots/history.spng
+[product-summary]: screenshots/summary.png
+[product-history]: screenshots/history.png
