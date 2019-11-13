@@ -45,7 +45,7 @@
                                 <h6>Result: </h6>
                             </div>
                             <div class="col-12 text-lg-left">
-                                <em>{{result.summary_result}}</em>
+                                <em class="text-success">{{result.summary_result}}</em>
                             </div>
                         </div>
                     </div>
@@ -94,10 +94,12 @@
                         }).catch(error => {
                             if (!error.response) {
                                 // network error
-                                this.errorStatus = 'Error: Network Error';
+                                let errorStatus = 'Error: Network Error';
+
                             } else {
-                                this.errorStatus = error.response.data.message;
+                                let errorStatus = error.response.data.message;
                             }
+                            alert("An error has occured. See more at console..")
                         });
 
                         // setTimeout(() => {

@@ -19,7 +19,6 @@
     </div>
 </template>
 <script>
-    import axios from 'axios';
 
     const columns = [
         {
@@ -73,7 +72,7 @@
             fetch(params = {}) {
                 // console.log('params:', params);
                 this.loading = true;
-                const pagination = { ...this.pagination };
+                const pagination = {...this.pagination};
                 if (!localStorage.getItem("shistory")) {
                     console.log('empty');
                 } else {
