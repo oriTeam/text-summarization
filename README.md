@@ -29,7 +29,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <h3 align="center">WeTravel</h3>
+  <h3 align="center">Text Summarization</h3>
 
   <p align="center">
     An awesome README template to jumpstart your projects!
@@ -58,41 +58,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Du lịch là việc thực hiện một chuyến đi của con người, với nhiều mục đích cụ
-thể riêng biệt đến một nơi khác mà không phải để định cư và có sự trở về sau chuyến
-đi (theo Wikipedia). Mục đích của việc đi du lịch là vui chơi, giải trí, thăm thân nhân
-hoặc được tổ chức bởi các công ty để thưởng cho nhân viên sau một năm làm việc mệt
-mỏi. Du lịch mang lại cho ta rất nhiều lợi ích như :
-+ Giúp ta mở rộng kiến thức và tâm hồn.
-+ Giảm stress và bế tắc trong cuộc sống.
-+ Giúp ta cởi mở hơn, giao tiếp tốt hơn, và có thêm những mối quan hệ.
-+ Được vận động nhiều hơn , nâng cao sức khỏe về thể chất, tinh thần.
-
-Nhu cầu lớn là vậy, tuy nhiên, chúng ta thường gặp khó khăn trong việc chuẩn bị
-cho chuyến du lịch như về địa điểm, giá cả và người hướng dẫn tour,... Việc chuẩn bị
-và tìm kiếm những thông tin như thế thường làm cho chúng ta mất rất nhiều thời gian
-và công sức.Và tất nhiên việc so sánh giá cả cũng như tìm kiếm được một người hướng
-dẫn viên phù hợp là rất cần thiết đối với mỗi người. Về phương diện của người hướng
-dẫn viên hoặc các công ty tour du lịch, việc quảng bá hình ảnh từ khi mới xây dựng
-hoặc phát triển cần một chi phí marketing rất lớn. Không những thế, các phương pháp
-quảng bá thường dùng như quảng cáo qua báo đài, TV thường đem lại hiệu quả không
-cao bởi không có sự chọn lọc khách hàng.
-
-Chính vì thế, WeTravel ra đời để giúp khách hàng và các công ty tour du lịch được
-kết nối với nhau, giúp giải quyết những khó khăn và vướng mắc ở trên . Với
-WeTravel, khách hàng sẽ có thể biết được những tour du lịch đang mở, biết được giá,
-được trao đổi trực tiếp với công ty về lộ trình và chọn người người hướng dẫn sao cho 
-phù hợp. Người đi du lịch còn có thể so sánh giá cả giữa các tour, giúp họ có thể chọn
-được tour phù hợp với mong muốn với kinh tế hiện có. Ngoài ra, khách hàng còn còn thể thấy
-được những đánh giá của người đã tham gia tour du lịch trước của công ty để an tâm
-hơn về chất lượng của tour. Phía ngược lại, các công ty tour sẽ có được một nguồn
-khách hàng dồi dào, chọn lọc mà không cần bỏ ra nhiều chi phí cho marketing và quảng
-cáo. WeTravel là một cầu nối hoàn hảo cho công ty và khách hàng, giúp việc đi du
-lịch, trải nghiệm ngày một nâng cao hơn.
-
-Ứng dụng Mobile WeTravel là 1 phần của hệ thống WeTravel, đưa tour Du lịch tiếp cận với khách hàng một cách dễ dàng nhất có thể. 
+[![Product Name Screen Shot][product-summary]](https://github.com/vantrong291/wetravel)
+[![Product Name Screen Shot][product-history]](https://github.com/vantrong291/wetravel)
 
 
 ### Built With
@@ -165,19 +132,15 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 1. Clone the repo
 ```sh
-git clone https://github.com/vantrong291/wetravel.git
+git clone https://github.com/vantrong291/text-summarization.git
 ```
 
-2. Install NPM packages
+2. Build & Run it!
 ```sh
-npm install
+docker-compose up --build
 ```
 
-3. Run it !
-```sh
-yarn r
-```
-
+3. Check it on your brower at: localhost:8080/summary
 
 
 <!-- USAGE EXAMPLES -->
@@ -211,7 +174,6 @@ Contributions are what make the open source community such an amazing place to b
 
 <!-- LICENSE -->
 ## License
-
 Distributed under the MIT License. See `LICENSE` for more information.
 
 
@@ -219,27 +181,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+[@vantrong291](https://fb.com/vantrong.orion) - vantrong291@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
-
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Img Shields](https://shields.io)
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Pages](https://pages.github.com)
-* [Animate.css](https://daneden.github.io/animate.css)
-* [Loaders.css](https://connoratherton.com/loaders)
-* [Slick Carousel](https://kenwheeler.github.io/slick)
-* [Smooth Scroll](https://github.com/cferdinandi/smooth-scroll)
-* [Sticky Kit](http://leafo.net/sticky-kit)
-* [JVectorMap](http://jvectormap.com)
-* [Font Awesome](https://fontawesome.com)
-
-
+Project Link: [https://github.com/vantrong291/wetravel](https://github.com/vantrong291/wetravel)
 
 
 
@@ -257,4 +201,5 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 [license-url]: https://github.com/vantrong291/wetravel/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/vantrong291
-[product-screenshot]: App/Assets/Images/Screenshoots/screenshot01.png
+[product-summary]: screenshoots/summary.png
+[product-history]: screenshoots/history.spng
