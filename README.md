@@ -32,7 +32,7 @@
   <h3 align="center">Text Summarization</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    An mini web app for testing @bogianoithonda code
     <br />
   </p>
 </p>
@@ -75,22 +75,6 @@ docker-compose up --build
 ```
 
 3. Check it on your brower at: localhost:8080/summary
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/vantrong291/wetravel/issues) for a list of proposed features (and known issues).
-
 
 
 <!-- CONTRIBUTING -->
