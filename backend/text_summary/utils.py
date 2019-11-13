@@ -55,7 +55,7 @@ def text_cleaner(text,num):
 
 
 def load_data():
-    data = pd.read_csv("Reviews.csv", nrows=100000)
+    data = pd.read_csv("/code/text_summary/Reviews.csv", nrows=100000)
     data.drop_duplicates(subset=['Text'], inplace=True)  # dropping duplicates
     data.dropna(axis=0, inplace=True)  # dropping na
     cleaned_summary = []

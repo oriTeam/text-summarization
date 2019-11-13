@@ -1,4 +1,4 @@
-from attention import AttentionLayer
+from .attention import AttentionLayer
 import numpy as np
 import pandas as pd
 
@@ -8,7 +8,8 @@ from keras import backend as K
 import tensorflow as tf
 from tensorflow.keras.layers import Input, LSTM, Embedding, Concatenate, Dense, TimeDistributed, Bidirectional
 from tensorflow.keras.models import Model
-from utils import text_cleaner, load_data
+from .utils import text_cleaner, load_data
+
 
 class Summary():
     def __init__(self):
@@ -20,10 +21,7 @@ class Summary():
         embedding_dim = 300
         self.x_tokenizer, self.y_tokenizer = load_data()
 
-
-
         K.clear_session()
-
 
         # Encoder
         encoder_inputs = Input(shape=(self.max_text_len,))
@@ -43,7 +41,6 @@ class Summary():
         encoder_lstm3 = LSTM(latent_dim, return_state=True, return_sequences=True, dropout=0.4, recurrent_dropout=0.4)
         encoder_outputs, state_h, state_c = encoder_lstm3(encoder_output2)
 
-
         decoder_inputs = Input(shape=(None,))
 
         # embedding layer
@@ -54,13 +51,11 @@ class Summary():
         decoder_lstm = LSTM(latent_dim, return_sequences=True, return_state=True)
         decoder_outputs, decoder_c, decoder_h = decoder_lstm(dec_emb, initial_state=[state_h, state_c])
 
-
         attn_layer = AttentionLayer(name='attention_layer')
         attn_out, attn_states = attn_layer([encoder_outputs, decoder_outputs])
 
         # Concat attention input and decoder LSTM output
         decoder_concat_input = Concatenate(axis=-1, name='concat_layer')([decoder_outputs, attn_out])
-
 
         # dense layer
         decoder_dense = TimeDistributed(Dense(self.y_voc, activation='softmax'))
@@ -68,7 +63,7 @@ class Summary():
 
         # Define the model
         model = Model([encoder_inputs, decoder_inputs], decoder_outputs)
-        model.load_weights('lstm_attention.h5')
+        model.load_weights('/code/text_summary/lstm_attention.h5')
 
         self.encoder_model = Model(inputs=encoder_inputs, outputs=[encoder_outputs, state_h, state_c])
 
@@ -94,8 +89,6 @@ class Summary():
         self.reverse_target_word_index = self.y_tokenizer.index_word
         self.reverse_source_word_index = self.x_tokenizer.index_word
         self.target_word_index = self.y_tokenizer.word_index
-
-
 
     def decode_sequence(self, text):
         cleaned = text_cleaner(text, 0)
