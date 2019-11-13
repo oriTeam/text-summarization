@@ -111,6 +111,12 @@ Contributions are what make the open source community such an amazing place to b
 Distributed under the MIT License. See `LICENSE` for more information.
 
 
+<!-- LICENSE -->
+## Contributors
+[@bogianoithonda](https://github.com/bogianoithonda) - Trần Hữu Tuân
+
+[@vantrong291](https://fb.com/vantrong.orion) - vantrong291@gmail.com
+
 
 <!-- CONTACT -->
 ## Contact
