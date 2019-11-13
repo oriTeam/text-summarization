@@ -189,16 +189,16 @@ Project Link: [https://github.com/vantrong291/wetravel](https://github.com/vantr
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/vantrong291/wetravel.svg?style=flat-square
-[contributors-url]: https://github.com/vantrong291/wetravel/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/vantrong291/wetravel.svg?style=flat-square
-[forks-url]: https://github.com/vantrong291/wetravel/network/members
-[stars-shield]: https://img.shields.io/github/stars/vantrong291/wetravel.svg?style=flat-square
-[stars-url]: https://github.com/vantrong291/wetravel/stargazers
-[issues-shield]: https://img.shields.io/github/issues/vantrong291/wetravel.svg?style=flat-square
-[issues-url]: https://github.com/vantrong291/wetravel/issues
-[license-shield]: https://img.shields.io/github/license/vantrong291/wetravel.svg?style=flat-square
-[license-url]: https://github.com/vantrong291/wetravel/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/vantrong291/text-summarization.svg?style=flat-square
+[contributors-url]: https://github.com/vantrong291/text-summarization/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/vantrong291/text-summarization.svg?style=flat-square
+[forks-url]: https://github.com/vantrong291/text-summarization/network/members
+[stars-shield]: https://img.shields.io/github/stars/vantrong291/text-summarization.svg?style=flat-square
+[stars-url]: https://github.com/vantrong291/text-summarization/stargazers
+[issues-shield]: https://img.shields.io/github/issues/vantrong291/text-summarization.svg?style=flat-square
+[issues-url]: https://github.com/vantrong291/text-summarization/issues
+[license-shield]: https://img.shields.io/github/license/vantrong291/text-summarization.svg?style=flat-square
+[license-url]: https://github.com/vantrong291/text-summarization/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/vantrong291
 [product-summary]: screenshoots/summary.png
