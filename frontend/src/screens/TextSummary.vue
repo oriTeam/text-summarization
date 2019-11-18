@@ -29,9 +29,13 @@
                     </a-form-item>
                 </a-form>
             </div>
+
             <div class="col-12">
+
                 <div v-show="submited">
                     <div v-if="!result.summary_result">
+                        <DynamicProgressBar :loadingPercentProp="loadingPercent"
+                                            :isFinished="result.summary_result !== undefined && result.summary_result.length > 0"/>
                         <a-skeleton active :paragraph="{rows: 2}" title="false"/>
                     </div>
                     <div v-else>
@@ -58,17 +62,22 @@
 <script>
     import axios from 'axios';
     import {BACKEND_URL} from '../const'
+    import DynamicProgressBar from '../components/DynamicProgressBar'
 
     export default {
         data() {
             return {
                 loading: false,
                 submited: false,
-                result: {}
+                result: {},
+                loadingPercent: 0
             }
         },
         beforeCreate() {
             this.form = this.$form.createForm(this, {name: 'normal_summary'});
+        },
+        components: {
+            DynamicProgressBar
         },
         methods: {
             handleSubmit(e) {
@@ -83,10 +92,9 @@
 
                         axios.post(BACKEND_URL + "/summary", values).then(res => {
                             this.result = res.data;
-                            if(!localStorage.getItem("shistory")) {
+                            if (!localStorage.getItem("shistory")) {
                                 localStorage.setItem("shistory", JSON.stringify([res.data]))
-                            }
-                            else {
+                            } else {
                                 let older = JSON.parse(localStorage.getItem("shistory"));
                                 older.push(res.data);
                                 localStorage.setItem("shistory", JSON.stringify(older))
@@ -101,7 +109,7 @@
                             }
                             alert("An error has occured. See more at console..")
                         });
-
+                        this.loadingPercent = 0
                         // setTimeout(() => {
                         //     this.result = {
                         //         "original_text": "It is very delicious",
@@ -110,7 +118,7 @@
                         // }, 2000)
                     }
                 });
-            },
+            }
         },
     };
 </script>

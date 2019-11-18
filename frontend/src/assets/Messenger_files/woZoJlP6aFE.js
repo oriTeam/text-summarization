@@ -1,0 +1,4 @@
+if (self.CavalryLogger) { CavalryLogger.start_js(["7dIuu"]); }
+
+__d("JewelBootloadModules",["BootloadOnInteraction","JSResource"],(function(a,b,c,d,e,f){__p&&__p();var g={},h={};function i(a){if(!a.bootload_conf||!a.bootload_module)return[];var b=[a.bootload_module];a.bootload_conf.bundleBootloader&&g[a.name]&&(b=b.concat(g[a.name]));return b}function j(a,b){h[b.name]=h[b.name]||new a(b,b.bootload_args)}a={mount:function(a){var c=a.getButton();b("BootloadOnInteraction").mount(c,i(a),function(b){j(b,a),a.inform("opened")})},load:function(a){b("JSResource").loadAll(i(a),function(b){j(b,a),a.inform("opened")})},loadModules:function(a){b("JSResource").loadAll(i(a),function(b){j(b,a)})}};e.exports=a}),null);
+__d("legacy:UIPagelet",["UIPagelet"],(function(a,b,c,d,e,f){a.UIPagelet=b("UIPagelet")}),3);
