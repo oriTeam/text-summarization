@@ -34,7 +34,7 @@
 
                 <div v-show="submited">
                     <div v-if="!result.summary_result">
-                        <DynamicProgressBar :loadingPercentProp="loadingPercent"
+                        <DynamicProgressBar :isStarted="submited" :loadingPercentProp="loadingPercent"
                                             :isFinished="result.summary_result !== undefined && result.summary_result.length > 0"/>
                         <a-skeleton active :paragraph="{rows: 2}" title="false"/>
                     </div>
